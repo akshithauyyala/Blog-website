@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Notes on technology, data, and building a thoughtful career by Akshitha Uyyala.">
+  <title>Fieldnotes — Ideas, Stories & Insights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Fieldnotes home"><span class="brand-mark">F</span><span>fieldnotes<span class="brand-dot">.</span></span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a><a href="#articles">Articles</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme"><span aria-hidden="true">◐</span></button><button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span></button></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal"><p class="eyebrow"><span class="eyebrow-line"></span> A journal on making things matter</p><h1>Ideas, stories<br>&amp; <em>insights.</em></h1><p class="hero-intro">Thoughts on technology, data, and the work of building a meaningful career. Written for the curious, by Akshitha Uyyala.</p><div class="hero-links"><a class="button button-dark" href="#articles">Explore articles <span aria-hidden="true">↘</span></a><a class="text-link" href="#about">A little about me <span aria-hidden="true">→</span></a></div></div>
+      <div class="hero-art reveal" aria-label="Editorial illustration of a notebook and plant" role="img"><div class="art-orbit"></div><div class="art-sun"></div><div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div><div class="art-book"><span>FIELD<br>NOTES</span></div><div class="art-caption">SEEK. LEARN. BECOME</div></div>
+      <div class="hero-note"><span>01 / 06</span><span>Ideas worth sitting with</span><span class="note-rule"></span></div>
+    </section>
+    <section class="featured container reveal" aria-label="Featured article">
+      <div class="section-kicker"><span>THE FEATURE</span><span class="kicker-rule"></span><span>01 — A closer look</span></div>
+      <article id="featured-card" class="featured-card"></article>
+    </section>
+    <section class="articles-section" id="articles">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">THE READING ROOM</p><h2 id="featured-heading">Latest articles<span class="accent">.</span></h2><p class="section-intro">A collection of notes, lessons, and useful rabbit holes.</p></div><span class="article-count" id="article-count">07 ARTICLES</span></div>
+        <div class="toolbar reveal"><div class="filters" id="filters" role="group" aria-label="Filter articles by category"></div><label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Search articles</span><input id="search-input" type="search" placeholder="Search articles…" autocomplete="off"><kbd>⌘ K</kbd></label></div>
+        <div class="article-grid" id="article-grid" aria-live="polite"></div><p class="empty-state" id="empty-state" hidden>No articles found. Try another search or category.</p>
+      </div>
+    </section>
+    <section class="picks-section container reveal" aria-labelledby="picks-title"><div class="picks-heading"><div><p class="eyebrow">WORTH YOUR TIME</p><h2 id="picks-title">Editor’s picks<span class="accent">.</span></h2></div><a class="text-link" href="#articles">Browse all <span aria-hidden="true">→</span></a></div><div id="picks-list" class="picks-list"></div></section>
+    <section class="categories-section" id="categories"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">FOLLOW A THREAD</p><h2>Explore by category<span class="accent">.</span></h2></div><p class="categories-aside">Good ideas live at the intersections.<br>Start wherever you are curious.</p></div><div id="category-list" class="category-list reveal"></div></div></section>
+    <section class="about-section container" id="about"><div class="about-photo reveal" role="img" aria-label="Portrait of Akshitha Uyyala"><div class="portrait-sun"></div><div class="portrait-shape"><span>AU</span></div><span class="portrait-label">AKSHITHA UYYALA · WRITER & BUILDER</span></div><div class="about-copy reveal"><p class="eyebrow">A NOTE FROM THE AUTHOR</p><h2>Curiosity is a<br><em>practice.</em></h2><p>I’m Akshitha Uyyala, a developer and data scientist who likes turning complicated ideas into things people can use. Fieldnotes is where I share what I’m learning along the way.</p><p>Expect practical notes on AI, thoughtful engineering, career turns, and the small experiments that make the work better.</p><a href="#contact" class="text-link">Say hello <span aria-hidden="true">→</span></a><div class="signature">Akshitha Uyyala <span>—</span></div></div></section>
+    <section class="newsletter-section"><div class="container newsletter-inner reveal"><div><p class="eyebrow">A LETTER, OCCASIONALLY</p><h2>Good ideas, in your inbox.</h2><p>A considered note on what I’m reading, building, and thinking about. No noise.</p></div><form id="newsletter-form" class="newsletter-form" novalidate><label class="sr-only" for="newsletter-email">Your email address</label><div class="input-action"><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button type="submit" class="button button-dark">Subscribe <span aria-hidden="true">→</span></button></div><p class="form-message" id="newsletter-message" aria-live="polite"></p></form></div></section>
+    <section class="contact-section container" id="contact"><div class="contact-copy reveal"><p class="eyebrow">OPEN CHANNEL</p><h2>Let’s make<br>something <em>useful.</em></h2><p>Have a question, a project in mind, or a good book recommendation? I’d love to hear from you.</p><div class="contact-detail"><span>ALSO AROUND</span><a href="https://www.linkedin.com/in/uyyala-akshitha-65b94a292/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/akshithauyyala" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><form id="contact-form" class="contact-form reveal" novalidate><div class="form-row"><label for="contact-name">Your name<input id="contact-name" name="name" autocomplete="name" required placeholder="Name"></label><label for="contact-email">Email address<input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label></div><label for="contact-message">What’s on your mind?<textarea id="contact-message" name="message" rows="4" required placeholder="A few words to get us started…"></textarea></label><div class="form-submit"><button class="button button-dark" type="submit">Send a note <span aria-hidden="true">→</span></button><p id="contact-message-status" class="form-message" aria-live="polite"></p></div></form></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-top"><a class="brand" href="#home"><span class="brand-mark">F</span><span>fieldnotes<span class="brand-dot">.</span></span></a><p>Pay attention. Stay curious.<br>Make something that matters.</p><div class="footer-links"><a href="#articles">Articles</a><a href="#about">About</a><a href="#contact">Contact</a></div><div class="social-links"><a href="https://www.linkedin.com/in/uyyala-akshitha-65b94a292/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a><a href="https://github.com/akshithauyyala" target="_blank" rel="noreferrer" aria-label="GitHub">gh</a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">ig</a><a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">yt</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Akshitha Uyyala</span><span>Made with intention, in the margins.</span><a href="#home" class="back-top">Back to top ↑</a></div></footer>
+  <button class="scroll-top" id="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+  <dialog class="article-dialog" id="article-dialog" aria-label="Article reader"><div class="reader-progress"><span id="reader-progress-bar"></span></div><button class="reader-close" id="reader-close" type="button" aria-label="Close article">× <span>Close</span></button><article class="reader-content" id="reader-content"></article></dialog>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
